@@ -26,7 +26,9 @@
         
         <div class="form-group">
             <label for="modelname">Model:</label>
-            <input type="text" id="modelname" ng-model="modelname" required>
+            <input type="text" id="modelname" ng-model="modelname" ng-minlength="3" ng-maxlength="25"required>
+            <p ng-show="userForm.modelname.$error.minlength" class="help-block">Model Name is too short.</p>
+            <p ng-show="userForm.modelname.$error.maxlength" class="help-block">Model Name is too long.</p>
           </div>
 				
         <div class="form-group"  ng-init="display_data()">
