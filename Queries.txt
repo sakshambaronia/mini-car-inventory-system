@@ -1,3 +1,0 @@
-CREATE TABLE t_car_model_manufacturer (id INT NOT NULL AUTO_INCREMENT, manufacturer NVARCHAR(100), model NVARCHAR(100), color VARCHAR(20), registration_number NVARCHAR(200), manufacturing_year YEAR , note nvarchar(1000), image MediumBlob ,PRIMARY KEY (id));
-
-create table t__car_model (id INT NOT NULL AUTO_INCREMENT, manufacturer nvarchar(100),PRIMARY KEY (id))
