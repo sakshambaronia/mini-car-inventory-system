@@ -1,6 +1,6 @@
 <?php 
 include '../../config/config.php';
-$conn = mysqli_connect('$server', '$username', '$password' , '$db ');
+$conn = mysqli_connect($server, $username, $password , $db) or die("Server Error");
 $data = json_decode(file_get_contents('php://input'), true);
 
 if(count($data)>0){

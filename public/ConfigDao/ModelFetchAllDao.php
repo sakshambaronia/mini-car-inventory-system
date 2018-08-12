@@ -1,6 +1,6 @@
 <?php 
 include '../../config/config.php';
-$conn = mysqli_connect('$server', '$username', '$password' , '$db ');
+$conn = mysqli_connect($server, $username, $password , $db) or die("Server Error");
 $mydata = json_decode(file_get_contents('php://input'), true);
 
 $model=$_GET['model'];

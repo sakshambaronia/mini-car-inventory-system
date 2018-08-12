@@ -1,9 +1,8 @@
-<?php 
-$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-$server = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
-$db = substr($url["path"], 1);
+<?php
+$server = "us-cdbr-iron-east-01.cleardb.net";
+$username = "bc74453aafb1d3";
+$password = "8244f735";
+$db = "heroku_71c71c7de5ab5f6";
 
 $config = array(
     'host' => $server ,
@@ -11,3 +10,4 @@ $config = array(
     'pw' => $password,
     'db' => $db 
 );
+
