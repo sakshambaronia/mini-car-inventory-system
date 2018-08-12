@@ -14,7 +14,7 @@
 	<div class="container">
   		<h1 style="text-align: center;">Mini Car Inventory system</h1>
 		<div class="content" ng-controller="modelFetchController" ng-init="display_model_data()">
-			<h2>Sell/Display car models</h2>
+			<h2>Car model details</h2>
 			<a href="../Main/inventoryIndex.php" class="btn btn-primary btn-md">Go back to Homepage</a>
 			<div><br><br></div>
 			<table class="table table-striped">

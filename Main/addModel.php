@@ -20,40 +20,47 @@
 	<div class="content">
 		<h2>Add model details</h2>
 		<div id="addModel" style="width:100%;">
-      <div id="addModelDetails" ng-controller="modelInsertController"> 
+      <div id="addModelDetails" ng-controller="modelInsertController">
+
+      <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
+        
         <div class="form-group">
             <label for="modelname">Model:</label>
-            <input type="text" id="modelname" ng-model="modelname">
+            <input type="text" id="modelname" ng-model="modelname" required>
           </div>
-				<div class="form-group"  ng-init="display_data()">
+				
+        <div class="form-group"  ng-init="display_data()">
     				<div class="dropdown">
     				<label for="manufacturer">Manufacturer:</label>
-    				<select ng-model="manufacturer_info" ng-options="manufacturername.manufacturer for manufacturername in manufacturernames">
+    				<select ng-model="manufacturer_info" ng-options="manufacturername.manufacturer for manufacturername in manufacturernames" required>
             </select>
             </div>
-        </div>		  
-      <div class="form-group">
+        </div>	  
+        
+        <div class="form-group">
     			<label for="color">Color:</label>
-    			<input type="text" class="form-control" id="color" ng-model="color">
+    			<input type="text" class="form-control" id="color" ng-model="color" required>
   			</div>
-  			<div class="form-group">
+  			
+        <div class="form-group">
     			<label for="year">Manufacturing Year:</label>
-    			<input type="text" class="form-control" id="year" ng-model="year">
+    			<input type="text" class="form-control" id="year" ng-model="year" required>
   			</div>
-  			<div class="form-group">
+  			
+        <div class="form-group">
     			<label for="registration">Registration Number:</label>
-    			<input type="text" class="form-control" id="registration" ng-model="registration">
+    			<input type="text" class="form-control" id="registration" ng-model="registration" required>
   			</div>
-  			<div class="form-group">
+  			
+        <div class="form-group">
     			<label for="note">Note:</label>
-    			<input type="text" class="form-control" id="note" ng-model="note">
+    			<input type="text" class="form-control" id="note" ng-model="note" required>
   			</div>
-  			<div class="form-group">
-    			<label for="picture">Upload Pictures:</label>
-    			<input type="file" class="form-control" id="picture" ng-model="picture" multiple>
-  			</div>
-  			<button type="submit" class="btn btn-primary btn-md" ng-click="insert_model_Data()" >Submit</button>
+  			
+        <button type="submit" class="btn btn-primary btn-md" ng-disabled="userForm.$invalid" ng-click="insert_model_Data()" >Submit</button>
+        
         <a href="../Main/inventoryIndex.php" class="btn btn-primary btn-md">Go back to Homepage</a>
+      </form>
 		</div>
 	</div>
  </div>

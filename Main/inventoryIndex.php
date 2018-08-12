@@ -17,7 +17,7 @@
 			<h2 style="text-align: center">Car Inventory Portal</h2>
 			<br><br>
 			<div class="btn-group-vertical">
-			<a href="../Main/InventoryMain.php" class="btn btn-primary btn-lg">Add Car Manufacturer</a>
+			<a href="../Main/inventoryMain.php" class="btn btn-primary btn-lg">Add Car Manufacturer</a>
 			<a href="../Main/addModel.php" class="btn btn-primary btn-lg">Add Car Model</a>
 			<a href="../Main/sellDisplayModel.php" class="btn btn-primary btn-lg">View/Update Car Model</a>
 			</div>				

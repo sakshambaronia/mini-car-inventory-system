@@ -14,7 +14,7 @@
 	<div class="container">
   		<h1 style="text-align: center;">Mini Car Inventory system</h1>
 		<div class="content" ng-controller="modelBindController" ng-init="fetchAllModels()">
-		<h2>Sell/Display car models</h2>
+		<h2>Car model details</h2>
 		<div>
 			<table class="table table-striped">
 				<tr>
