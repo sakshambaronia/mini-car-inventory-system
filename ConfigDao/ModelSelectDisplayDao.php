@@ -1,0 +1,14 @@
+<?php 
+$conn = mysqli_connect('localhost', 'saksham', 'control' , 'Inventory');
+$output=array();
+$query="select manufacturer, model, count(*) as count from t_car_model_manufacturer group by manufacturer, model";
+$result=mysqli_query($conn,$query);
+
+if(mysqli_num_rows($result)>0){
+	while($row = mysqli_fetch_array($result)){
+		$output[]=$row;
+	}
+}
+
+echo json_encode($output);
+?>
