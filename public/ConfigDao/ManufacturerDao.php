@@ -1,5 +1,6 @@
 <?php 
-$conn = mysqli_connect('localhost', 'saksham', 'control' , 'Inventory');
+include '../../config/config.php';
+$conn = mysqli_connect('$server', '$username', '$password' , '$db ');
 $data = json_decode(file_get_contents('php://input'), true);
 
 if(count($data)>0){

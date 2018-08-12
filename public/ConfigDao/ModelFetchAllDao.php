@@ -1,5 +1,6 @@
 <?php 
-$conn = mysqli_connect('localhost', 'saksham', 'control' , 'Inventory');
+include '../../config/config.php';
+$conn = mysqli_connect('$server', '$username', '$password' , '$db ');
 $mydata = json_decode(file_get_contents('php://input'), true);
 
 $model=$_GET['model'];

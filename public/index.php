@@ -15,7 +15,7 @@
 		<div class="content" style="text-align: center;" >
 		<h1 style="text-align: center;">Car Inventory System</h1>
 		<div style="align:center">
-			<a href="../public/Main/inventoryIndex.php" class="btn btn-primary btn-lg">Please click here to begin</a>
+			<a href="Main/inventoryIndex.php" class="btn btn-primary btn-lg">Please click here to begin</a>
 		</div>
 	</div>
 	</div>
